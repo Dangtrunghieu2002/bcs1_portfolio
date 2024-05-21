@@ -1,0 +1,43 @@
+header .collapse .nav-link:hover{
+    color: #34a22c !important;
+}
+
+header .collapse .nav-link::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #34a22c;
+    width: 0;
+    height: 2px;
+    transition: all 0.5s;
+}
+
+header .collapse .nav-link:hover::before{
+    width: 100%
+}
+
+header .collapse .active{
+    color:#34a22c !important;
+}
+
+header .collapse .active::before{
+    width: 100%;
+}
+
+/* cyber carousel */
+.cyber_carousel .carousel-item .carousel_content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    left: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.cyber_carousel .carousel-item .carousel_content img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
